@@ -10,10 +10,12 @@ metadata:
     io.kompose.service: jqplay
   name: jqplay
 spec:
+  type: NodePort
   ports:
   - name: "3000"
     port: 3000
     targetPort: 80
+    nodePort: 30002
   selector:
     io.kompose.service: jqplay
 status:
