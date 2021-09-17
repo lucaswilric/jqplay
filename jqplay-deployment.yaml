@@ -29,7 +29,7 @@ spec:
         - name: DATABASE_URL
           value: postgres://jqplay-user:jqplay-pass@db/jqplay-db?sslmode=disable
         image: jqplay:latest
-        imagePullPolicy: ""
+        imagePullPolicy: IfNotPresent
         name: jqplay
         ports:
         - containerPort: 80
