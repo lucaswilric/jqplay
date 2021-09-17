@@ -1,4 +1,4 @@
-FROM golang:latest
+FROM golang:1.15-buster
 
 RUN apt-get update && apt-get upgrade -y && apt-get install -y --no-install-recommends \
 		nodejs \
